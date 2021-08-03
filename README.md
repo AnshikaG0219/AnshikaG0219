@@ -26,9 +26,5 @@
 [<img align="left" alt="GitHub" width="26px" src="https://img.icons8.com/fluency/48/000000/github.png" />]
 [<img align="left" alt="Terminal" width="26px" src="https://img.icons8.com/officel/16/000000/command-line.png" />]
 
-<br />
-<br />
-
----
 [instagram]: https://www.instagram.com/alcohol_markers/
 [linkedin]: https://www.linkedin.com/in/anshika-gautam-45b824174/
