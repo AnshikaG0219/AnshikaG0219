@@ -31,7 +31,7 @@
 ---
 <br/>
 
-<img align="left" alt = "Anshika Gautam GITHUB STATS" src="https://github-readme-stats.vercel.app/api?username=AnshikaG0219"/>
+<img align="left" alt = "Anshika Gautam GITHUB STATS" src="https://github-readme-stats.vercel.app/api?username=AnshikaG0219&show_icons=true&theme=radical"/>
 
 
 [instagram]: https://www.instagram.com/alcohol_markers/
