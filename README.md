@@ -33,11 +33,6 @@
 
 <img align="left" alt = "Anshika Gautam GITHUB STATS" src="https://github-readme-stats.vercel.app/api?username=AnshikaG0219&show_icons=true&theme=tokyonight"/>
 
-<br/>
-
----
-<br/>
-
 <img align="left" alt = "Anshika Gautam GITHUB STATS" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnshikaG0219&layout=compact&show_icons=true&theme=tokyonight"/>
 
 
