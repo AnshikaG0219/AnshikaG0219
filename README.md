@@ -22,7 +22,7 @@
 <img align="left" alt="HTML5" width="26px" src="https://image.flaticon.com/icons/png/512/1051/1051277.png" />
 <img align="left" alt="CSS3" width="26px" src="https://image.flaticon.com/icons/png/512/732/732190.png" />
 <img align="left" alt="JavaScript" width="26px" src="https://img.icons8.com/color/48/000000/javascript--v1.png" />
-<img align="left" alt="jQuery" width="26px" src="	https://img.icons8.com/ios-filled/50/4a90e2/jquery.png" />
+<img align="left" alt="jQuery" width="26px" src="https://img.icons8.com/ios-filled/50/4a90e2/jquery.png" />
 <img align="left" alt="React" width="26px" src="https://img.icons8.com/color/48/000000/react-native.png" />
 <img align="left" alt="Flask" width="26px" src="https://img.icons8.com/cute-clipart/64/000000/flask.png" />
 <img align="left" alt="MySQL" width="26px" src="https://img.icons8.com/color/48/000000/sql.png" />
