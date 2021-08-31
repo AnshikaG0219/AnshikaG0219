@@ -1,6 +1,6 @@
 ### Hi there, I'm Anshika 👋
 
-## I'm a Student, Developer, and Artist!!
+## I'm a Student, Developer, Mentor, and an Artist!!
  
 - 🌱 I'm currently learning everything Web Dev has to offer 😊
 - 👯 I’m looking to contribute to any open source projects
