@@ -2,16 +2,14 @@
 <h3 style="text-align: center">I'm a Developer 💻 and an Artist 🎨🖌</h3>
 <p align="center"><img src="https://komarev.com/ghpvc/?username=AnshikaG0219&color=0F3460" alt="Anshika Gautam" /></p>
 
-- 🌱 I'm currently learning everything **Web Dev** has to offer 😊
-- 🌐 I’m looking forward to contribute to any open source projects
+- 🌱 I'm currently learning everything **Web Dev** has to offer. 😊
+- 🌐 I’m looking forward to contribute to any open source projects.
 - ⚡ Fun fact: I also play guitar 🎸 (but just sometimes 😜)
 
 ### Connect with me:
 
 [<img align="left" alt="anshika_linkedIn | LinkedIn" width="22px" src="https://image.flaticon.com/icons/png/512/2111/2111499.png" />][linkedin]
 [<img align="left" alt="anshika_instagram | Instagram" width="22px" src="https://image.flaticon.com/icons/png/512/1384/1384063.png" />][instagram]
-
-
 
 <br />
 
