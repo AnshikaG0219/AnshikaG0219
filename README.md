@@ -1,5 +1,5 @@
-<h1 style="text-align: center">Hello there, I'm <a style="background: -webkit-linear-gradient(#EB596E, #FFE227); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" href="https://festive-ptolemy-33b8d7.netlify.app/">Anshika Gautam</a><img src="https://c.tenor.com/qGMFl3TTip8AAAAi/billy-srgrafo.gif" width="50px"></h1>
-<h3 style="text-align: center">I'm a Developer 💻 and an Artist 🎨🖌</h3>
+<h1 align="center">Hello there, I'm <a style="background: -webkit-linear-gradient(#EB596E, #FFE227); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" href="https://festive-ptolemy-33b8d7.netlify.app/">Anshika Gautam</a><img src="https://c.tenor.com/qGMFl3TTip8AAAAi/billy-srgrafo.gif" width="50px"></h1>
+<h3 align="center">I'm a Developer 💻 and an Artist 🎨🖌</h3>
 <p align="center"><img src="https://komarev.com/ghpvc/?username=AnshikaG0219&color=0F3460" alt="Anshika Gautam" /></p>
 
 - 🌱 I'm currently learning everything **Web Dev** has to offer. 😊
