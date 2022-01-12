@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap");
 :root {
   --dark-blue: #1a1a2e;
   --blue: #16213e;
@@ -7,15 +7,16 @@
   --red: #e94560;
   --font-main: "Outfit", sans-serif;
   --dark-grey: #303841;
-  --cyan: #00ADB5;
-  --light-grey: #3A4750;
-  --light-grey2: #404B69;
+  --cyan: #00adb5;
+  --light-grey: #3a4750;
+  --light-grey2: #404b69;
   --dark-grey2: #283149;
   --dull-cyan: #00acb55e;
-  --light-grey3: #6D8299;
-  --font-secondary: 'Roboto Mono', monospace;
+  --light-grey3: #6d8299;
+  --grey: #c9ccd5;
+  --font-secondary: "Roboto Mono", monospace;
 }
-::selection{
+::selection {
   background-color: #00acb58c;
   color: white;
 }
@@ -29,7 +30,7 @@ body {
 }
 
 /* navbar styling */
-nav{
+nav {
   position: sticky;
   top: 0;
   background-color: var(--dark-blue);
@@ -39,7 +40,7 @@ nav{
   margin: auto;
   z-index: 100;
 }
-nav h3 a{
+nav h3 a {
   text-decoration: none;
   color: white;
 }
@@ -59,22 +60,23 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
-nav ul li a:hover, nav h3 a:hover {
+nav ul li a:hover,
+nav h3 a:hover {
   color: var(--light-grey3);
   cursor: pointer;
 }
-.resume-btn{
-  border: .2vw solid var(--cyan);
+.resume-btn {
+  border: 0.2vw solid var(--cyan);
   background: none;
   color: white;
-  border-radius: .3vw;
+  border-radius: 0.3vw;
   font-family: var(--font-main);
   height: 3vw;
   font-size: 1rem;
   width: 7vw;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 }
-.resume-btn:hover{
+.resume-btn:hover {
   background-color: var(--dull-cyan);
 }
 /* main start style */
@@ -82,7 +84,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
   width: 80%;
   margin: auto;
 }
@@ -98,13 +100,13 @@ main {
   font-weight: 600;
   font-family: var(--font-main);
 }
-.typewriter{
+.typewriter {
   font-size: 2vw;
   font-family: var(--font-main);
   font-weight: 600;
 }
 .typewriter > .word {
-  color: #C9CCD5;
+  color: var(--grey);
 }
 .typing {
   border-right: 0.2rem solid #777;
@@ -119,7 +121,7 @@ main {
     opacity: 1;
   }
 }
-.btn{
+.btn {
   background-color: var(--cyan);
   border: none;
   color: white;
@@ -127,16 +129,16 @@ main {
   font-family: var(--font-main);
   font-weight: bolder;
   letter-spacing: 1px;
-  border-radius: .3vw;
+  border-radius: 0.3vw;
 }
-.project-btn{
+.project-btn {
   border-radius: 0.3vw;
   font-size: 1.7vw;
   padding: 0.5rem 2rem;
   margin-right: 1.5rem;
   cursor: pointer;
 }
-.btn:hover{
+.btn:hover {
   background-color: var(--light-grey2);
 }
 .main-illust {
@@ -159,19 +161,19 @@ main {
   padding: 0 1vw;
   justify-content: center;
 }
-.social-links li a{
+.social-links li a {
   color: var(--light-grey3);
   font-size: 1.5vw;
-  transition: padding .5s;
+  transition: padding 0.5s;
 }
-.social-links li a:hover{
+.social-links li a:hover {
   color: var(--cyan);
-  padding:0 0 .5vw;
+  padding: 0 0 0.5vw;
 }
 /* about styling */
-about h1{
+about h1, #projects h1, footer h1 {
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 1px;
 }
 .about-main {
@@ -186,21 +188,41 @@ about h1{
   height: 25vw;
   object-fit: cover;
   border-radius: 1.5rem;
+  flex: 1/3;
 }
-.img-border{
+.img-border {
   height: 24.7vw;
   width: 18.7vw;
-  border: .2vw solid var(--cyan);
+  border: 0.2vw solid var(--cyan);
   border-radius: 1.5rem;
   position: absolute;
-  bottom: 1vw;
+  top: 3.5vw;
   right: -1vw;
   z-index: -1;
 }
-.about-container p{
+.about-container {
+  flex: 2/3;
+}
+.about-container p {
   width: 90%;
   margin: auto;
   text-align: justify;
+  color: var(--grey);
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  list-style: none;
+}
+.skills li {
+  color: var(--grey);
+  margin-bottom: 1vw;
+}
+.skills li::before {
+  content: "»";
+  padding-right: 1vw;
+  color: var(--cyan);
 }
 
 /* footer styling  */
@@ -208,13 +230,7 @@ footer {
   /* border-top: 0.2vw solid var(--red); */
   padding: 3vw 0 0vw;
 }
-footer h1 {
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-  margin: 0;
-}
-.contact-sub{
+.subhead {
   color: var(--light-grey3);
   text-align: center;
   margin-bottom: 3rem;
@@ -226,39 +242,39 @@ footer h1 {
   gap: 2rem;
   justify-content: space-between;
 }
-.contact-details{
+.contact-details {
   flex: 3;
 }
-.detail i{
+.detail i {
   color: var(--cyan);
   margin-right: 1vw;
   font-size: 2rem;
 }
-.detail h3{
+.detail h3 {
   font-size: 1.5rem;
   margin: 0;
 }
 .detail p a,
-.detail p{
+.detail p {
   text-decoration: none;
   color: var(--light-grey3);
 }
-.detail p{
+.detail p {
   padding-left: 2.6vw;
 }
-.detail ul{
+.detail ul {
   display: flex;
   padding: 0;
   margin: 3vw 0;
 }
-.detail ul li{
+.detail ul li {
   list-style: none;
 }
-.detail ul li a i{
+.detail ul li a i {
   color: var(--light-grey3);
   font-size: 1.5rem;
 }
-.detail ul li a i:hover{
+.detail ul li a i:hover {
   color: var(--cyan);
 }
 .contact-form {
@@ -268,21 +284,21 @@ footer h1 {
 .contact-form input {
   height: 2vw;
 }
-.form-row{
+.form-row {
   display: flex;
   justify-content: space-between;
   gap: 2vw;
 }
-.form-row .form-control{
+.form-row .form-control {
   width: 42%;
 }
-.form-control{
+.form-control {
   background-color: var(--dark-grey2);
   display: flex;
   flex-direction: column;
   margin-bottom: 2vw;
   padding: 1.6vw;
-  border-radius: .6vw;
+  border-radius: 0.6vw;
 }
 .contact-form input,
 .contact-form textarea {
@@ -298,12 +314,12 @@ footer h1 {
 .submit-btn {
   height: 3vw;
   font-size: 1rem;
-  border-radius: .3vw;
+  border-radius: 0.3vw;
 }
 .submit-btn:hover {
   background-color: var(--light-grey2);
 }
-.copyright{
+.copyright {
   text-align: center;
   color: var(--light-grey3);
 }

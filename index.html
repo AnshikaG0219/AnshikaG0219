@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anshika Gautam</title>
@@ -59,39 +59,64 @@
       </div>
       <button class="btn project-btn">My Projects</button>
     </div>
-    <img src="Assets/main-illust.svg" class="main-illust" alt="coder illustration" />
+    <img src="Assets/illust-2.svg" class="main-illust" alt="coder illustration" />
   </main>
   <about id="about">
     <h1>About Me</h1>
+    <p class="subhead">
+      Keep scrolling and reading to know more about me and my skills.
+    </p>
     <div class="about-main">
       <div class="about-container">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          tempore quia exercitationem at doloremque dolore repellat id error,
-          illo pariatur esse vitae nobis? Earum optio ratione a recusandae
-          totam harum at, sapiente suscipit. Iste vel officiis quidem enim,
-          quasi asperiores numquam est at nemo corporis? Consequuntur eligendi
-          obcaecati ea natus autem ducimus, facere saepe cupiditate amet
-          quasi, dignissimos explicabo et perferendis, nisi illo aut dolorem
-          atque aspernatur aliquid. Neque dignissimos ex voluptatum, tenetur
-          excepturi ullam, unde ad nesciunt quam fuga modi itaque reiciendis
-          laudantium. Iste veniam eum quae pariatur animi magnam atque nobis,
-          beatae consectetur ea sit nisi eius tempore, reprehenderit
-          aspernatur? Voluptas doloribus illum, aperiam fugit illo mollitia!
+          Hi there,<br />I am
+          <span style="color: #00adb5">Anshika Gautam</span> and I am
+          currently a <span style="color: #00adb5">Computer Science and Engineering Sophomore</span> from Indira
+          Gandhi Delhi Technical University for Women. I am a <span style="color: #00adb5">Full stack
+            developer, an Educator, a Mentor and an artist</span>. It was back in 2015
+          when I got "Fundamentels of HTML" book in my curriculum, although
+          the subject did not hold any weightage in final result I studied it
+          myself and today here I am with firm knowledge of multiple
+          frameworks and libraries. I am also C++ programmer and working my
+          way throught advancing my knowledge in Data Structures and
+          Algorithms. <br />Apart from this I am also exploring the flutter
+          development and trying to gain confidence to start with Machine
+          Learning. I am also an artist and have held many workshops, so in
+          case you want to talk to me regarding development or painting :P, I
+          am gonna be like a dog with two tails.<br>
+          Here are few of my favourite technologies I've been working with recently:
+        <ul class="skills">
+          <li>JavaScript (ES6+)</li>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>MongoDB</li>
+          <li>C++</li>
+        </ul>
         </p>
       </div>
       <img class="my-img" src="Assets/anshika-img.jpg" />
       <span class="img-border"></span>
     </div>
   </about>
+  <div id="projects">
+    <h1>My Projects</h1>
+    <p class="subhead">
+      Here are few projects I have worked on.
+    </p>
+  </div>
   <footer id="contact">
     <h1>Get in Touch</h1>
-    <p class="contact-sub">My inbox is always open for new ideas, queries or simply a 'hey'.</p>
+    <p class="subhead">
+      My inbox is always open for new ideas, queries or simply a 'hey'.
+    </p>
     <div class="footer-container">
       <div class="contact-details">
         <div class="detail">
           <h3><i class="far fa-envelope"></i>Email</h3>
-          <p><a href="mailto:anshikagautam130@gmail.com">anshikagautam130@gmail.com</a></p>
+          <p>
+            <a href="mailto:anshikagautam130@gmail.com">anshikagautam130@gmail.com</a>
+          </p>
         </div>
         <div class="detail">
           <h3><i class="fas fa-map-marker-alt"></i>Location</h3>
@@ -114,7 +139,7 @@
           </ul>
         </div>
       </div>
-      <form id="contact" class="contact-form" method="get">
+      <form id="contact" class="contact-form" onsubmit="sendEmail()" method="get">
         <div class="form-row">
           <div class="form-control">
             <label for="name">Name</label>
@@ -127,17 +152,35 @@
         </div>
         <div class="form-control">
           <label for="subject">Subject</label>
-          <input type="text" name="subject" id="subject">
+          <input type="text" name="subject" id="subject" />
         </div>
-        <div class="form-control"><label for="message">Message</label>
-          <textarea name="message" id="msg" rows="5" required></textarea>
+        <div class="form-control">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="5" required></textarea>
         </div>
         <button class="btn submit-btn" type="submit">send message</button>
       </form>
     </div>
-    <div class="copyright"><p>&copy; Anshika Gautam; All right reserved.</p></div>
+    <div class="copyright">
+      <p>&copy; Anshika Gautam; All right reserved.</p>
+    </div>
   </footer>
 </body>
 <script src="index.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function sendEmail() {
+    emailjs.init("user_1JI3vTYRgFNTyieRk8Fgr");
+  })();
+  function sendEmail() {
+    emailjs.send("service_t3wamfg", "template_gvg5htr", {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value,
+    });
+    alert("Message sent successfully ^_^");
+  }
+</script>
 
 </html>
