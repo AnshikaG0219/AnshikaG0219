@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anshika Gautam</title>
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="home">
+  <nav>
+    <h3><a href="#home">Anshika</a></h3>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <button class="resume-btn" onclick="window.open('Assets/Anshika_Gautam_Resume.pdf', '_blank')">
+          Resume
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div class="social-links">
+      <ul>
+        <li>
+          <a href="https://github.com/AnshikaG0219"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/alcohol_markers/"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/anshika-gautam/"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="mailto:anshikagautam130@gmail.com"><i class="fas fa-at"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Anshika_Gautam_"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-container">
+      <div class="main-head">
+        Hi, I'm <br /><span class="name">Anshika Gautam.</span><br />
+        <span class="typewriter" data-wait="2000"
+          data-words='["A Web Developer.", "A Mentor.", "An Educator.", "An Artist.", "A Learner."]'>.
+        </span>
+      </div>
+      <button class="btn project-btn">My Projects</button>
+    </div>
+    <img src="Assets/main-illust.svg" class="main-illust" alt="coder illustration" />
+  </main>
+  <about id="about">
+    <h1>About Me</h1>
+    <div class="about-main">
+      <div class="about-container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          tempore quia exercitationem at doloremque dolore repellat id error,
+          illo pariatur esse vitae nobis? Earum optio ratione a recusandae
+          totam harum at, sapiente suscipit. Iste vel officiis quidem enim,
+          quasi asperiores numquam est at nemo corporis? Consequuntur eligendi
+          obcaecati ea natus autem ducimus, facere saepe cupiditate amet
+          quasi, dignissimos explicabo et perferendis, nisi illo aut dolorem
+          atque aspernatur aliquid. Neque dignissimos ex voluptatum, tenetur
+          excepturi ullam, unde ad nesciunt quam fuga modi itaque reiciendis
+          laudantium. Iste veniam eum quae pariatur animi magnam atque nobis,
+          beatae consectetur ea sit nisi eius tempore, reprehenderit
+          aspernatur? Voluptas doloribus illum, aperiam fugit illo mollitia!
+        </p>
+      </div>
+      <img class="my-img" src="Assets/anshika-img.jpg" />
+      <span class="img-border"></span>
+    </div>
+  </about>
+  <footer id="contact">
+    <h1>Get in Touch</h1>
+    <p class="contact-sub">My inbox is always open for new ideas, queries or simply a 'hey'.</p>
+    <div class="footer-container">
+      <div class="contact-details">
+        <div class="detail">
+          <h3><i class="far fa-envelope"></i>Email</h3>
+          <p><a href="mailto:anshikagautam130@gmail.com">anshikagautam130@gmail.com</a></p>
+        </div>
+        <div class="detail">
+          <h3><i class="fas fa-map-marker-alt"></i>Location</h3>
+          <p>Delhi, India</p>
+        </div>
+        <div class="detail">
+          <ul>
+            <li>
+              <a href="https://github.com/AnshikaG0219"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/alcohol_markers/"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/anshika-gautam/"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Anshika_Gautam_"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <form id="contact" class="contact-form" method="get">
+        <div class="form-row">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+        </div>
+        <div class="form-control">
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject">
+        </div>
+        <div class="form-control"><label for="message">Message</label>
+          <textarea name="message" id="msg" rows="5" required></textarea>
+        </div>
+        <button class="btn submit-btn" type="submit">send message</button>
+      </form>
+    </div>
+    <div class="copyright"><p>&copy; Anshika Gautam; All right reserved.</p></div>
+  </footer>
+</body>
+<script src="index.js"></script>
+
+</html>
