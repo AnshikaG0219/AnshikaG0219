@@ -44,3 +44,10 @@ function init() {
   const wait = txtEle.getAttribute("data-wait");
   new TypeWriter(txtEle, words, wait);
 }
+
+let nav = document.querySelector("nav ul");
+let ham = document.querySelector(".ham-btn")
+ham.addEventListener("click", function(){
+  nav.classList.toggle("active");
+  ham.classList.toggle("is-active");
+})
