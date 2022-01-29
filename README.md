@@ -1,17 +1,22 @@
-<h1 align="center">Hello there, I'm <a style="background: -webkit-linear-gradient(#EB596E, #FFE227); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" href="https://festive-ptolemy-33b8d7.netlify.app/">Anshika Gautam</a><img src="https://c.tenor.com/qGMFl3TTip8AAAAi/billy-srgrafo.gif" width="50px"></h1>
+<h1 align="center">Hello there, I'm <a href="https://anshikag0219.github.io/AnshikaG0219/"> Anshika Gautam </a><img src="https://c.tenor.com/qGMFl3TTip8AAAAi/billy-srgrafo.gif" width="50px"></h1>
+<div id="badges" align="center">
+  <a href="https://www.linkedin.com/in/anshika-gautam/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  <a href="https://www.instagram.com/alcohol_markers/">
+    <img src="https://img.shields.io/badge/Instagram-orange?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Badge"/>
+  </a>
+  <a href="https://twitter.com/Anshika_Gautam_">
+    <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
+  </a>
+</div>
 <h3 align="center">I'm a Developer 💻 and an Artist 🎨🖌</h3>
 <p align="center"><img src="https://komarev.com/ghpvc/?username=AnshikaG0219&color=0F3460" alt="Anshika Gautam" /></p>
 
 - 🌱 I'm currently learning everything **Web Dev** has to offer. 😊
 - 🌐 I’m looking forward to contribute to any open source projects.
 - ⚡ Fun fact: I also play guitar 🎸 (but just sometimes 😜)
-
-### Connect with me:
-
-[<img align="left" alt="anshika_linkedIn | LinkedIn" width="22px" src="https://image.flaticon.com/icons/png/512/2111/2111499.png" />][linkedin]
-[<img align="left" alt="anshika_instagram | Instagram" width="22px" src="https://image.flaticon.com/icons/png/512/1384/1384063.png" />][instagram]
-
-<br />
+---
 
 ### Languages and Tools:
 
@@ -39,12 +44,12 @@
 ---
 <br/>
 
-<img align="left" alt = "Anshika Gautam GITHUB STATS" src="https://github-readme-stats.vercel.app/api?username=AnshikaG0219&show_icons=true&theme=tokyonight"/>
+### 🐢 My Github Stats
 
-<img align="left" alt = "Anshika Gautam GITHUB STATS" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnshikaG0219&layout=compact&show_icons=true&theme=tokyonight"/>
-
-
-
-[instagram]: https://www.instagram.com/alcohol_markers/
-[linkedin]: https://www.linkedin.com/in/anshika-gautam-45b824174/
-[website]: https://festive-ptolemy-33b8d7.netlify.app/
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=AnshikaG0219&theme=dark&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
+<div>
+<img align="center" alt = "Anshika Gautam GITHUB STATS" src="https://github-readme-stats.vercel.app/api?username=AnshikaG0219&show_icons=true&theme=tokyonight"/>
+</div>
+<div>
+<img align="center" alt = "Anshika Gautam GITHUB STATS" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnshikaG0219&layout=compact&show_icons=true&theme=tokyonight"/>
+</div>
