@@ -47,6 +47,11 @@ function init() {
 
 let nav = document.querySelector("nav ul");
 let ham = document.querySelector(".ham-btn")
+let toggle = document.querySelector('.nav__menu input')
+toggle.addEventListener('change', function() {
+    nav.classList.toggle("active")
+})
+
 ham.addEventListener("click", function(){
   nav.classList.toggle("active");
   ham.classList.toggle("is-active");

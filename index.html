@@ -29,11 +29,12 @@
         </button>
       </li>
     </ul>
-    <button class="ham-btn">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+    <label class="nav__menu">
+      <input type="checkbox">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
   </nav>
   <main>
     <div class="social-links">
@@ -117,10 +118,35 @@
     </p>
     <div class="work-main">
       <div class="project">
+        <a target="_blank" href="https://junkally.herokuapp.com/">
+          <img src="Assets/junkAlly.png" class="project-img" title="JunkAlly" alt="JunkAlly">
+          <span class="project-img-border"></span>
+        </a>
+        <div class="project-data">
+          <h3>JunkAlly</h3>
+          <p>JunkAlly acts as a bridge between small businesses which are working towards repurposing and recycling
+            waste such as paper, plastic, metal, or glass produced from our households and us, the consumers. It is a
+            one-stop platform for both consumers (who are generating the waste) and the businesses (which recycle that
+            waste). We aim to help and promote small businesses along with reducing the amount of waste produced.</p>
+          <ul title="Tech Stack used" class="tech-stack">
+            <li>EJS</li>
+            <li>NodeJs</li>
+            <li>ExpressJs</li>
+            <li>MongoDB</li>
+          </ul>
+          <div class="links">
+            <a title="GitHub" target="_blank" href="https://github.com/AnshikaG0219/pac-man"><i
+                class="fab fa-github"></i></a>
+            <a title="Live Demo" target="_blank" href="https://anshikag0219.github.io/pac-man/"><i
+                class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
         <a target="_blank" href="https://anshikag0219.github.io/pac-man/">
           <img src="Assets/pacman-ss.png" class="project-img" title="Pacman Clone" alt="PACMAN CLONE">
+          <span class="project-img-border"></span>
         </a>
-        <span class="project-img-border"></span>
         <div class="project-data">
           <h3>PACMAN - CLONE</h3>
           <p>Pacman is the classic game we all know that, but developing one game which is your childhood memory brings
@@ -131,16 +157,19 @@
             <li>JavaScript</li>
           </ul>
           <div class="links">
-            <a title="GitHub" target="_blank" href="https://github.com/AnshikaG0219/pac-man"><i class="fab fa-github"></i></a>
+            <a title="GitHub" target="_blank" href="https://github.com/AnshikaG0219/pac-man"><i
+                class="fab fa-github"></i></a>
             <a title="Live Demo" target="_blank" href="https://anshikag0219.github.io/pac-man/"><i
                 class="fas fa-external-link-alt"></i></a>
           </div>
         </div>
       </div>
       <div class="project">
-        <a href="https://eop.girlscript.tech/" target="_blank"><img src="Assets/girlscript-eop-ss.png"
-            class="project-img" title="GirlScript Education Outreach Program" alt="GirlScript EOP"></a>
-        <span class="project-img-border"></span>
+        <a href="https://eop.girlscript.tech/" target="_blank">
+          <img src="Assets/girlscript-eop-ss.png"
+            class="project-img" title="GirlScript Education Outreach Program" alt="GirlScript EOP">
+            <span class="project-img-border"></span>
+          </a>
         <div class="project-data">
           <h3>GirlScript EOP</h3>
           <p>GirlScript Foundation works towards betterment of beginners in tech community. Their Education Outreach
@@ -162,8 +191,8 @@
       <div class="project">
         <a target="_blank" href="https://anshikag0219.github.io/IEEE-WIE/">
           <img src="Assets/WIE-ss.png" class="project-img" title="WIEmpower" alt="WIEmpower">
+          <span class="project-img-border"></span>
         </a>
-        <span class="project-img-border"></span>
         <div class="project-data">
           <h3>WIEmpower</h3>
           <p>WIEmpower is the flagship event organised by IEEE IGDTUW and IEEE Delhi Section.WIEmpower aims towards the
@@ -183,8 +212,9 @@
       </div>
       <div class="project">
         <a href="https://aakankshajha1.github.io/IEEE_IGDTUW/index.html" target="_blank">
-          <img src="Assets/IEEE-IGDTUW-ss.png" class="project-img" title="IEEE IGDTUW" alt="IEEE IGDTUW"></a>
-        <span class="project-img-border"></span>
+          <img src="Assets/IEEE-IGDTUW-ss.png" class="project-img" title="IEEE IGDTUW" alt="IEEE IGDTUW">
+          <span class="project-img-border"></span>
+        </a>
         <div class="project-data">
           <h3>IEEE IGDTUW</h3>
           <p>IEEE IGDTUW boasts of providing various platforms to aspiring women engineers with opportunities to host
@@ -206,8 +236,9 @@
       <div class="project">
         <a href="https://swifties-game.netlify.app/" target="_blank">
           <img src="Assets/swifties-ss.png" class="project-img" title="Taylor Swift Lyrics Guess Game"
-            alt="Taylor Swift Lyrics Guess"></a>
-        <span class="project-img-border"></span>
+            alt="Taylor Swift Lyrics Guess">
+            <span class="project-img-border"></span>
+          </a>
         <div class="project-data">
           <h3>Taylor Swift Lyrics Guess</h3>
           <p>This is fun game for all the swifties out there. I have worked with APIs here to fetch data on the web
@@ -261,7 +292,7 @@
           </ul>
         </div>
       </div>
-      <form id="contact" class="contact-form" onsubmit="sendEmail()" method="get">
+      <form class="contact-form" onsubmit="sendEmail()" method="get">
         <div class="form-row">
           <div class="form-control">
             <label for="name">Name</label>

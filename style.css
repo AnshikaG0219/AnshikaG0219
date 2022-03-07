@@ -31,6 +31,7 @@ body {
 
 /* navbar styling */
 nav {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: var(--dark-blue);
@@ -65,9 +66,10 @@ nav h3 a:hover {
   color: var(--light-grey3);
   cursor: pointer;
 }
-.ham-btn{
+.nav__menu{
   display: none;
   position: relative;
+  -ms-user-select: none;
   user-select: none;
   border: none;
   outline: none;
@@ -78,7 +80,7 @@ nav h3 a:hover {
   background: none;
   cursor: pointer;
 }
-.ham-btn span{
+.nav__menu span{
  display: block;
  width: 5.5vw;
  height: .5vw;
@@ -89,14 +91,14 @@ nav h3 a:hover {
  transform-origin: 0 0;
  transition: .4s;
 }
-.ham-btn.is-active span:nth-child(2){
+.nav__menu.is-active span:nth-child(2){
   transform: translateX(10vw);
   background-color: var(--cyan);
 }
-.ham-btn.active span:nth-child(1){
+.nav__menu.active span:nth-child(1){
   transform: translate(0px, .1vw) rotate(45deg)
 }
-.ham-btn.active span:nth-child(3){
+.nav__menu.active span:nth-child(3){
   transform: translate(0px, 0vw) rotate(-45deg)
 }
 .resume-btn {
@@ -247,6 +249,7 @@ footer h1 {
   color: var(--grey);
 }
 .skills {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
   gap: 0px 10px;
@@ -269,6 +272,7 @@ footer h1 {
 }
 .project-img{
   width: 40vw;
+  height: 100%;
   object-fit: cover;
   border-radius: 1vw;
 }
@@ -424,6 +428,61 @@ footer {
   color: var(--light-grey3);
 }
 
+.nav__menu {
+  display: none;
+  width: 40px;
+  height: 36px;
+  position: relative;
+  cursor: pointer;
+}
+.nav__menu div {
+  position: absolute;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--grey);
+  transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6),
+    width 0.2s ease 0.2s;
+}
+.nav__menu input {
+  display: none;
+}
+.nav__menu input + div {
+  top: 50%;
+  left: 0;
+  margin: -2px 0 0 0;
+  width: 40px;
+  transform-origin: 50% 50%;
+}
+.nav__menu input + div + div {
+  top: 2px;
+  left: 0;
+  width: 20px;
+  transform-origin: 0 50%;
+}
+.nav__menu input + div + div + div {
+  bottom: 2px;
+  right: 0;
+  width: 28px;
+  transform-origin: 100% 50%;
+  transform: translate(-12px, 0);
+}
+.nav__menu input:checked + div {
+  transform: rotate(-45deg);
+  transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s;
+}
+.nav__menu input:checked + div + div {
+  width: 19px;
+  transform: translate(6px, 0) rotate(45deg);
+  transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s,
+    width 0.2s ease;
+}
+.nav__menu input:checked + div + div + div {
+  width: 19px;
+  transform: translate(-6px, 0) rotate(45deg);
+  transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s,
+    width 0.2s ease;
+}
+
 /* media queries */
 @media screen and (max-width: 1040px) {
   main{
@@ -432,7 +491,7 @@ footer {
     margin: 20vw 0 7vw;
     width: 100%;
   }
-  .ham-btn{
+  .nav__menu{
     display: block;
   }
   .social-links li a{
@@ -472,30 +531,32 @@ footer {
     padding: 8vw 0;
     justify-content: space-evenly;
     position: fixed;
-    top: 16vw;
+    top: 25vw;
     left: 100%;
     gap: 2vw;
     background-color: violet;
-    height: 82%;
-    width: 100%;
+    height: 70%;
+    width: 90%;
     /* padding: min(30vh, 10rem) 2rem; */
     margin-top: 0rem;
     background-color: hsl(0 0% 100% / 0.1);
+    -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
     gap: 2rem;
+    border-radius: 2vh;
     transition: all 0.7s ease;
   }
   nav ul.active{
-    left: 0%;
+    left: 5%;
   }
   .about-main{
     flex-direction: column-reverse;
     width: 90%;
   }
-  .ham-btn.is-active span:nth-child(1){
+  .nav__menu.is-active span:nth-child(1){
     transform: translate(0px, .25vw) rotate(45deg);
   }
-  .ham-btn.is-active span:nth-child(3){
+  .nav__menu.is-active span:nth-child(3){
     transform: translate(0vw, 0vw) rotate(-45deg);
   } 
   .about-container p{
@@ -519,12 +580,14 @@ footer {
   }
   .project{
     flex-direction: column;
-    border-bottom: 2vw dotted var(--light-grey3);
+    border-bottom: .5vh dotted var(--light-grey3);
     padding-bottom: 4vw;
     margin-bottom: 8vw;
   }
   .project-img{
     width: 100%;
+    height: 47vw;
+    object-fit: cover;
   }
   .tech-stack li{
     font-size: 4vw;
@@ -535,7 +598,7 @@ footer {
   }
   .project-img-border{
     width: 100%;
-    height: 42%;
+    height: 48vw;
   }
   .project-data p{
     line-height: normal;
@@ -552,8 +615,8 @@ footer {
     width: 90%;
   }
   .submit-btn{
-    height: 100%;
-    border-radius: 2vw;
+    height: 5vh;
+    border-radius: .5vh;
   }
   .resume-btn{
     width: 100%;
@@ -561,5 +624,11 @@ footer {
   }
   .form-control label{
     font-size: 3vw;
+  }
+  .form-row .form-control {
+    width: 45%;
+  }
+  .contact-form input {
+    height: 2.5vw;
   }
 }
