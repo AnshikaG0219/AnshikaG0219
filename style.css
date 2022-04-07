@@ -487,9 +487,10 @@ footer {
 @media screen and (max-width: 1040px) {
   main{
     flex-direction: column-reverse;
-    height: 100%;
-    margin: 20vw 0 7vw;
+    height: 80vh;
+    margin: 35vw 0 7vw;
     width: 100%;
+    justify-content: space-evenly;
   }
   .nav__menu{
     display: block;
@@ -546,6 +547,9 @@ footer {
     border-radius: 2vh;
     transition: all 0.7s ease;
   }
+  nav ul li a {
+    font-size: 1.4rem;
+  }
   nav ul.active{
     left: 5%;
   }
@@ -599,6 +603,7 @@ footer {
   .project-img-border{
     width: 100%;
     height: 48vw;
+    border: .5vw solid var(--light-grey2);
   }
   .project-data p{
     line-height: normal;
@@ -621,6 +626,9 @@ footer {
   .resume-btn{
     width: 100%;
     height: 100%;
+    font-size: 1.5rem;
+    border: .5vw solid var(--cyan);
+    border-radius: 1vw;
   }
   .form-control label{
     font-size: 3vw;
@@ -629,6 +637,10 @@ footer {
     width: 45%;
   }
   .contact-form input {
-    height: 2.5vw;
+    height: 5vw;
+    padding: 1vw 0;
+  }
+  .tech-stack{
+    margin: 2vw 0;
   }
 }
